@@ -6,22 +6,22 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.firstSpringCURD.dao.EmployeeDAO;
 import com.example.firstSpringCURD.entity.Employee;
+import com.example.firstSpringCURD.services.EmployeeService;
 
 @RestController
 @RequestMapping("/api")
 public class EmployeeRestController {
 
-    private EmployeeDAO employeeDAO;
+    private EmployeeService employeesService;
 
-    public EmployeeRestController(EmployeeDAO employeeDAO){
-        this.employeeDAO=employeeDAO;
+    public EmployeeRestController(EmployeeService employeesService){
+        this.employeesService=employeesService;
     }
 
     @GetMapping("/employee")
     public List<Employee> findAll(){
-            return employeeDAO.findAll();
+            return employeesService.findAll();
     }
 
 }

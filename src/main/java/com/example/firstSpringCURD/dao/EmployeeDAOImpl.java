@@ -29,6 +29,12 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         return empl;
     
     }
+
+    @Override
+    public Employee findEmployeeById(int id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'findEmployeeById'");
+    }
     
 
 }
