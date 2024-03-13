@@ -32,8 +32,19 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     @Override
     public Employee findEmployeeById(int id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'findEmployeeById'");
+        return entityManager.find(Employee.class, id);
+    }
+
+    @Override
+    public Employee updatEmployee(Employee employee) {
+        return entityManager.merge(employee);    
+    }
+
+    @Override
+    public Employee deletEmployeebyID(int id) {
+        Employee e = entityManager.find(Employee.class, id);
+        entityManager.remove(e);
+        return e;
     }
     
 
