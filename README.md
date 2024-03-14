@@ -1,0 +1,1 @@
+This project aims to provide a hands-on learning experience with Spring Boot by implementing CRUD (Create, Read, Update, Delete) operations using a MySQL database. Through this project, developers will gain practical knowledge of building RESTful APIs to perform basic database operations using HTTP requests.
