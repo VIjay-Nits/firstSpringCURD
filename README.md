@@ -3,11 +3,11 @@ Skills - Java, Spring Boot, Spring DAO, MySQL, Maven
 
 HTTP Method request from Postman -
 
-1. Get
+1. Get Request - "/employee" - will show the all employee deatils
 ![Screenshot (89)](https://github.com/VIjay-Nits/firstSpringCURD/assets/50875814/acc92f9e-9ecc-4823-b93f-54fdb7a4954d)
 
-2. POST
+2. POST - "/employee" - will create new entry in employee table and return the details of employee
 ![Screenshot (97)](https://github.com/VIjay-Nits/firstSpringCURD/assets/50875814/a7b90f32-7555-485f-936c-fd5c4bf3463d)
 
-3. PUT
+3. PUT - "/employee" - update the existing employee in the db
 ![Screenshot (98)](https://github.com/VIjay-Nits/firstSpringCURD/assets/50875814/380950e3-8637-43a7-90f5-b25edc73e8b2)
